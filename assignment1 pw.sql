@@ -1,6 +1,8 @@
 -- 1.Identify the primary keys and foreign keys in maven movies db. Discuss the differences /
 -- primary keys: is the unique key, we can have only one primary key to acces the whole row of specific details of profile. 
- actor_id
+describe actor;
+--( primary key is actor_id) 
+actor_id
  adddress_id
  advisor_id
  category_id
@@ -9,8 +11,9 @@
  film_id
  film_categoory_id
 -- foreign key: is also  a primary key but here  we can connect two table to decrease the fetching time. and to reduce the size of the table.
-city_id
-country_id
+describe city;
+ city_id(primary key)
+country_id(foreign key)
 address_id
 st0ore_id
 language_id
